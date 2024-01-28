@@ -8,7 +8,7 @@ Supervised machine learning is based on the basis of labeled data.First the data
 Regression : House price prediction </br>
 Classification : Breast cancer detection.
 
-# Day 1
+# Day 2
 ## Unupervised Learning
 Learns by finding pattern in unlabelled data. Unsupervised learning is different from supervised learning as it is not provided with labelled data.The algorithm work by finding pattern in data.
 some algorithm used in unsupevised learning with it uses are:
