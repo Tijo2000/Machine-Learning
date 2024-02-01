@@ -47,7 +47,7 @@ Cross-entropy: Used in classification problems, it measures the information gain
 
 # Day 4
 ## Gradient Descent and Its Intuition
-###**Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J.**
+### **Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J.**
 Imagine you're lost in a hilly landscape, searching for the lowest valley (minimum point). Gradient descent is like an algorithm that helps you find that valley by taking small steps downhill. Here's the basic idea:
 
 Start on a hill: You start at some random point on the hill (initial parameters for your model).
