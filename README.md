@@ -73,24 +73,20 @@ You need to choose a good learning rate (step size) for optimal performance.
 
 
 # Day 4
-## Learning Rate
+## Learning Rate(Alpha)
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/823e2f21-419e-42fd-b04c-3671b400bcf8)
 Imagine you're training a dog to sit. With each iteration (treat you give), the dog learns and gets closer to mastering the "sit" command. But how big of a jump should the dog make in its understanding with each treat? That's where the learning rate comes in.
 
 In machine learning, the learning rate controls how much the model's parameters are adjusted after each training iteration. It determines how quickly the model "learns" from the data and updates its predictions.
 
-Here's a breakdown:
-
 High learning rate:
 
-Like giving the dog a big leap of treats, it can lead to fast changes in the model.
-Good for exploring the solution space and escaping local minima (shallow dips in the error landscape).
-But be careful! It can also cause the model to overshoot the optimal solution and become unstable, like the dog jumping and missing the "sit" completely.
+If learning rate is too large gradient descent may overshoot and never reach minimum i.e fail to converge,diverge.</br>
+
 Low learning rate:
 
-Like giving small nudges with treats, it leads to gradual changes in the model.
-More likely to converge to a stable solution (like the dog eventually learning to sit properly).
-But take too long! It can get stuck in local minima or miss deeper valleys (better solutions) in the error landscape.
+If learning rate is too small gradient descent may be too slow and take much time.
+
 Choosing the right learning rate:
 
 It's a balancing act! You want the model to learn quickly but not miss the best solution.
