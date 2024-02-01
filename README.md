@@ -45,4 +45,30 @@ Examples:
 Mean squared error (MSE): Commonly used for regression problems, it calculates the average squared difference between predictions and actual values.
 Cross-entropy: Used in classification problems, it measures the information gain or loss from your model's predictions.
 
+# Day 4
+## Gradient Descent and Its Intuition
+###**Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J.**
+Imagine you're lost in a hilly landscape, searching for the lowest valley (minimum point). Gradient descent is like an algorithm that helps you find that valley by taking small steps downhill. Here's the basic idea:
+
+Start on a hill: You start at some random point on the hill (initial parameters for your model).
+Feel the slope: You calculate the "slope" of the hill at your current position (the gradient). This slope tells you how steep the hill is and in which direction you should go to descend.
+Take a small step: You take a small step in the opposite direction of the slope (adjusting your model parameters a little) here w and b
+Repeat: You keep repeating steps 2 and 3, feeling the slope at each new position and taking small steps until you reach a point where the slope is zero (you've found a minimum!).
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/ef563786-1a81-45b8-b9b5-4da1dd1cc5e2)
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/8dba1866-9f80-402d-8c1e-1197ae840df1)
+
+
+Mathematical intuition:
+
+The hill you're exploring represents the cost function, which measures how "wrong" your model's predictions are. Lower values mean you're closer to the optimal solution.
+The slope (gradient) is calculated using derivatives, which tell you how much the cost function changes with respect to small changes in your model parameters.
+The step size determines how large or small your adjustments are. A large step might get you out of a local minimum, while a small step might take too long to reach the global minimum.
+<img width="538" alt="image" src="https://github.com/Tijo2000/Machine-Learning/assets/56153083/2aad1443-2318-4cae-8c23-5e72f1bcffc6">
+
+Here are some key points to remember:
+
+Gradient descent doesn't guarantee finding the absolute best solution (global minimum), but it often gets you close.,</br>
+You need to choose a good learning rate (step size) for optimal performance.
+
+
 
