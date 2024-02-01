@@ -72,3 +72,72 @@ You need to choose a good learning rate (step size) for optimal performance.
 
 
 
+# Day 4
+## Learning Rate
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/823e2f21-419e-42fd-b04c-3671b400bcf8)
+Imagine you're training a dog to sit. With each iteration (treat you give), the dog learns and gets closer to mastering the "sit" command. But how big of a jump should the dog make in its understanding with each treat? That's where the learning rate comes in.
+
+In machine learning, the learning rate controls how much the model's parameters are adjusted after each training iteration. It determines how quickly the model "learns" from the data and updates its predictions.
+
+Here's a breakdown:
+
+High learning rate:
+
+Like giving the dog a big leap of treats, it can lead to fast changes in the model.
+Good for exploring the solution space and escaping local minima (shallow dips in the error landscape).
+But be careful! It can also cause the model to overshoot the optimal solution and become unstable, like the dog jumping and missing the "sit" completely.
+Low learning rate:
+
+Like giving small nudges with treats, it leads to gradual changes in the model.
+More likely to converge to a stable solution (like the dog eventually learning to sit properly).
+But take too long! It can get stuck in local minima or miss deeper valleys (better solutions) in the error landscape.
+Choosing the right learning rate:
+
+It's a balancing act! You want the model to learn quickly but not miss the best solution.
+Often adjusted through trial and error or adaptive optimization techniques.
+Can be different for different parameters or even change during training.
+Key points:
+
+Learning rate is crucial for model performance and stability.
+Too high can lead to instability and overfitting.
+Too low can lead to slow convergence and underfitting.
+Choosing the right rate depends on the problem and model.
+
+# Day 4
+## Algorithms using Gradient Descent and Its types
+Algorithms Using Learning Rate and Gradient Descent and Different Gradient Descent Types
+Many machine learning algorithms leverage learning rate and gradient descent for optimization. Here are some prominent examples:
+
+Linear Regression: Gradient descent with learning rate adjustments is the core optimization technique for finding the line that best fits your data in linear regression.
+
+Logistic Regression: Similar to linear regression, this algorithm utilizes gradient descent and learning rate to optimize the model parameters for classifying data points.
+
+Support Vector Machines (SVM): SVMs employ gradient descent variations like stochastic gradient descent to find the optimal hyperplane separating different classes in data.
+
+Neural Networks: Training neural networks relies heavily on gradient descent with learning rate adjustments. Backpropagation, a key training algorithm, uses it to propagate errors backward and update network weights.
+
+Decision Trees: While not directly using gradient descent, decision trees can benefit from learning rate-like parameters controlling tree growth complexity.
+
+Gradient Boosting: This ensemble method aggregates weak learners trained with gradient descent and learning rate tuning for improved predictive power.
+
+Deep Learning Algorithms: Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), and other deep learning architectures heavily rely on complex variations of gradient descent with adaptive learning rate adjustments for efficient optimization.
+
+Different Types of Gradient Descent
+Beyond the basic concept, various gradient descent approaches cater to specific optimization needs:
+
+Batch Gradient Descent: Updates model parameters after processing all training data. Suitable for small datasets but can be computationally expensive for larger ones.
+
+Stochastic Gradient Descent (SGD): Updates parameters for each individual training example, making it faster for large datasets but potentially noisy.
+
+Mini-batch Gradient Descent: Processes data in batches and updates parameters after each batch, balancing efficiency and stability between batch and SGD.
+
+Momentum: Incorporates inertia to help escape local minima and accelerate convergence by considering the direction of previous updates.
+
+Adam: An adaptive learning rate optimization algorithm adjusting the learning rate for each parameter based on their historical updates and gradients.
+
+RMSprop: Another adaptive learning rate method using squared gradients for more stable updates compared to standard SGD.
+
+Adagrad: Also adaptive, but can suffer from diminishing learning rates for parameters with frequent updates.
+
+
+
