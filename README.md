@@ -135,5 +135,16 @@ RMSprop: Another adaptive learning rate method using squared gradients for more 
 
 Adagrad: Also adaptive, but can suffer from diminishing learning rates for parameters with frequent updates.
 
+# Day 5
+## Multiple Linear regression
+Multiple linear regression in machine learning model that uses multiple variables called as features to predicts the output.
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/1cf29bcf-8c6f-4de1-bf57-4295197f4d3c)
+
+## Vectorization for faster calculation 
+In muliple linear regression calculation is done using vectorization as it perform all calculation simultaneously and parallely and speed up the arithmetic operations.
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/e5b96258-f2c1-40a3-804c-0b746d7593bb)
+
+
+
 
 
