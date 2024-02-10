@@ -144,6 +144,56 @@ Multiple linear regression in machine learning model that uses multiple variable
 In muliple linear regression calculation is done using vectorization as it perform all calculation simultaneously and parallely and speed up the arithmetic operations.
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/e5b96258-f2c1-40a3-804c-0b746d7593bb)
 
+# Day 6
+## Feature Scaling
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/fc35f513-1ba5-4ef3-a3ae-55a2b0674ba7)
+
+Imagine you're training a dog to sit. Different dogs come in different sizes, so if you reward a tiny Chihuahua with the same size treat as a giant Great Dane, they'll react very differently. This is similar to how features work in machine learning algorithms. Some features might have large values, while others might be tiny. If you don't adjust for this, the algorithm might prioritize the features with bigger values, even if they're not actually the most important.
+
+Feature scaling helps by putting all features on the same "playing field." It's like resizing all the dogs to the same size, so the treat reward makes sense for everyone. There are different ways to achieve this, some more common than others:
+
+1. Min-Max Scaling: This squishes all values between 0 and 1. Imagine shrinking all the dogs down so the smallest becomes 1 foot tall and the largest becomes 5 feet tall.
+
+2. Standardization: This centers all values around 0 with a standard deviation of 1. Think of moving all the dogs to the same starting line, where the average dog is in the middle and everyone else is spread out evenly around them.
+
+3. Normalization: This brings all values within a specific range, like -1 to 1. Like putting all the dogs in a specific size cage, regardless of their original size.
+
+Which type of scaling to use depends on your data and algorithm. Some algorithms are sensitive to the scale of features, while others don't care. It's best to experiment and see what works best for your specific case.
+
+Here are some key points to remember:
+
+Feature scaling makes your data more manageable for machine learning algorithms.
+Different types of scaling exist, each with its own pros and cons.
+Choosing the right scaling method depends on your data and algorithm.
+
+
+
+### Difference between Normalization and Standardization 
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/31dd43bc-c31f-4de8-9451-8fc944f774c5)
+
+Normalization and standardization are both techniques used in feature scaling for machine learning, but they differ in how they achieve the same goal of putting all features on a similar scale. Here's a breakdown of their key differences:
+
+Scale:
+
+Normalization: Normalizes features to fall within a specific predefined range, often between 0 and 1 or -1 and 1. This makes features easy to interpret in terms of the chosen range.
+Standardization: Standardizes features to have a mean of 0 and a standard deviation of 1. This doesn't place features within a specific range but ensures they have equal importance in the model's calculations.
+Sensitivity to outliers:
+
+Normalization: Can be significantly affected by outliers, as it uses the overall minimum and maximum values for scaling. Outliers can skew the range and distort the representation of other features.
+Standardization: Less sensitive to outliers because it uses the mean and standard deviation, which are calculated based on all data points and are less influenced by extreme values.
+Distance-based algorithms:
+
+Normalization: More suitable for algorithms that rely on distances between data points, like k-Nearest Neighbors, because features have a common range.
+Standardization: More suitable for algorithms sensitive to feature scale, like linear regression and gradient descent, as feature values have equal weight on the model's output.
+Choosing the right technique:
+
+Consider the algorithm you're using and its sensitivity to feature scale.
+Think about the presence of outliers in your data and their potential impact on scaling.
+If interpretability of feature values within a specific range is important, choose normalization.
+If you want all features to have equal weight and are less concerned about interpreting specific values, choose standardization.
+
+## Choosing correct learning rate
+First we make sure gradient descent is decreasing over the iteration by looking at learning curve if it is working properly we choose correct learning rate by starting with smaller learning rate and increase it gradually.
 
 
 
