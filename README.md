@@ -195,6 +195,15 @@ If you want all features to have equal weight and are less concerned about inter
 ## Choosing correct learning rate
 First we make sure gradient descent is decreasing over the iteration by looking at learning curve if it is working properly we choose correct learning rate by starting with smaller learning rate and increase it gradually.
 
+# Day 6
+## Feature Engineering
+### Feature engineering
+Feature engineering means designing newfeatures by transforming or combining original features which maybe very important in prediciting the output.
+for e.g: we have to predict the price of swimming pool and we have length breadth and height of swimming pool as features now we can used feature engineering to create our new feature which is volume which is very important in predicting the price of swimming pool.
+
+### Polynomial regression
+Polynomial Regression is a regression algorithm that models the relationship between a dependent(y) and independent variable(x) as nth degree polynomial. The Polynomial Regression equation is given below:
+y= b0+b1x1+ b2x12+ b2x13+...... bnx1n
 
 
 
