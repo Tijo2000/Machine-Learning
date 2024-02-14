@@ -205,5 +205,29 @@ for e.g: we have to predict the price of swimming pool and we have length breadt
 Polynomial Regression is a regression algorithm that models the relationship between a dependent(y) and independent variable(x) as nth degree polynomial. The Polynomial Regression equation is given below:
 y= b0+b1x1+ b2x12+ b2x13+...... bnx1n
 
+# Day 6
+## Logistic Regression
+Logistic regression is a classification technique used to predict the probability of an event occurring, typically belonging to two categories (e.g., yes/no, pass/fail, churn/not churn). Unlike linear regression, which predicts continuous values, logistic regression outputs a value between 0 and 1, representing the likelihood of belonging to a specific category.
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/aa926e69-cc27-4fda-8c72-4e095fb6a1e3)
+Model: It represents the relationship between independent variables (features) and the dependent variable (categorical).
+Sigmoid function: This function transforms the linear combination of features into a probability between 0 and 1.
+Prediction: Based on the probability, a threshold (usually 0.5) is used to classify the observation into a category.
+
+### Sigmoid Function
+The sigmoid function is a mathematical function that maps any input value to a value between 0 and 1. It is commonly used in logistic regression to model the probability of a binary outcome. The sigmoid function has an S-shaped curve and is defined as follows:
+
+σ(z) = 1 / (1 + e^(-z))
+
+where z is the input value to the function. The output of the sigmoid function, σ(z), is a value between 0 and 1, with a midpoint at z=0.
+
+The sigmoid function has several important properties that make it useful in logistic regression. First, it is always positive and ranges between 0 and 1, which makes it suitable for modeling probabilities. Second, it is differentiable, which means that it can be used in optimization algorithms such as gradient descent. Finally, it has a simple derivative that can be expressed in terms of the function itself:
+
+d/dz σ(z) = σ(z) * (1 - σ(z))
+
+This derivative is used in logistic regression to update the model coefficients during the optimization process.
+
+
+
+
 
 
