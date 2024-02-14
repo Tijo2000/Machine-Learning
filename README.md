@@ -235,7 +235,7 @@ The decision boundary acts as a threshold based on this probability. Typically, 
 2. If the predicted probability is less than or equal to 0.5, the observation belongs to the negative class (e.g., loyal customer).
 
 # Day 9
-## Gradient Descnet for logistic regression
+## Gradient Descent for logistic regression
 Logistic Regression Ŷi is a nonlinear function(Ŷ=1​/1+ e-z), if we put this in the above MSE equation it will give a non-convex function as shown:
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/957a10a7-012d-4598-9641-4b0d32f1eca4)
 
