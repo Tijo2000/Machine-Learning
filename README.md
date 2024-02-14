@@ -195,7 +195,7 @@ If you want all features to have equal weight and are less concerned about inter
 ## Choosing correct learning rate
 First we make sure gradient descent is decreasing over the iteration by looking at learning curve if it is working properly we choose correct learning rate by starting with smaller learning rate and increase it gradually.
 
-# Day 6
+# Day 7
 ## Feature Engineering
 ### Feature engineering
 Feature engineering means designing newfeatures by transforming or combining original features which maybe very important in prediciting the output.
@@ -205,7 +205,7 @@ for e.g: we have to predict the price of swimming pool and we have length breadt
 Polynomial Regression is a regression algorithm that models the relationship between a dependent(y) and independent variable(x) as nth degree polynomial. The Polynomial Regression equation is given below:
 y= b0+b1x1+ b2x12+ b2x13+...... bnx1n
 
-# Day 6
+# Day 8
 ## Logistic Regression
 Logistic regression is a classification technique used to predict the probability of an event occurring, typically belonging to two categories (e.g., yes/no, pass/fail, churn/not churn). Unlike linear regression, which predicts continuous values, logistic regression outputs a value between 0 and 1, representing the likelihood of belonging to a specific category.
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/aa926e69-cc27-4fda-8c72-4e095fb6a1e3)
@@ -225,6 +225,28 @@ The sigmoid function has several important properties that make it useful in log
 d/dz σ(z) = σ(z) * (1 - σ(z))
 
 This derivative is used in logistic regression to update the model coefficients during the optimization process.
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/8a6239ba-778f-4891-81f4-6a9dd4e7effd)
+
+Decision Boundary in Logistic Regression:
+In logistic regression, the decision boundary refers to the hypothetical line that separates observations belonging to different classes. It essentially divides the feature space into regions where one class is more likely than the other.
+
+The decision boundary acts as a threshold based on this probability. Typically, a threshold of 0.5 is used:
+1. If the predicted probability is greater than 0.5, the observation is classified into the positive class (e.g., churned customer).
+2. If the predicted probability is less than or equal to 0.5, the observation belongs to the negative class (e.g., loyal customer).
+
+# Day 9
+## Gradient Descnet for logistic regression
+Logistic Regression Ŷi is a nonlinear function(Ŷ=1​/1+ e-z), if we put this in the above MSE equation it will give a non-convex function as shown:
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/957a10a7-012d-4598-9641-4b0d32f1eca4)
+
+1. When we try to optimize values using gradient descent it will create complications to find global minima.
+2. Another reason is in classification problems, we have target values like 0/1, So (Ŷ-Y)2 will always be in between 0-1 which can make it very difficult to keep track of the errors and it is difficult to store high precision floating numbers.
+
+   ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/bc41bf89-f8dc-43ad-b7ee-ffa473b01010)
+   Gradient Descent in Logistic Regression is an iterative optimisation algorithm used to find the local minimum of a function. It works by tweaking parameters w and b iteratively to minimize a cost function by taking steps proportional to the negative of the gradient at the current point.
+Gradient descent in logistic regression looks similar to gradient descent in linear regression but it has different value for function.
+
+
 
 
 
