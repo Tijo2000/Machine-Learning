@@ -248,7 +248,35 @@ Logistic Regression Ŷi is a nonlinear function(Ŷ=1​/1+ e-z), if we put this 
 Gradient descent in logistic regression looks similar to gradient descent in linear regression but it has different value for function.
 
 
+# Day 10
+## Overfitting and Underfitting
+<img width="509" alt="image" src="https://github.com/Tijo2000/Machine-Learning/assets/56153083/81e1826d-a9f5-401f-a148-c1c743a54e3a">
 
+Imagine you're trying to fit a hat on your head. The goal is to find a hat that fits just right, not too loose and not too tight.
+
+Underfitting is like having a hat that's way too large. It sits loosely on your head, doesn't cover your ears properly, and might even blow off in the wind. This happens when a machine learning model is too simple and can't capture the important patterns in the data. It makes bad predictions because it hasn't "learned" enough from the data.
+
+Overfitting is like having a hat that's way too small. It squeezes your head uncomfortably and might even block your vision. This happens when a model is too complex and memorizes the specific details of the training data, including noise and irrelevant information. It performs well on the training data but makes poor predictions on new data because it's focused on those irrelevant details instead of the underlying patterns.
+
+Here's an analogy:
+
+Underfitting: You try to learn a language by memorizing just a few basic words and phrases. You can't understand complex sentences or have meaningful conversations.
+Overfitting: You spend so much time memorizing a specific speech that you can't adapt it to different situations or have original conversations.
+Finding the right fit:
+
+The best outcome is a well-fitting hat, comfortable and covering your head properly. This is like having a machine learning model that balances complexity and simplicity. It captures the important patterns in the data without memorizing irrelevant details, leading to accurate predictions on both training and new data.
+
+### Underfitting
+It is a situtation when the training set doesnot fit well. It happen when data has high bias.
+
+### Overfitting
+It is a situation when the training set fit extremely well . It is also known as data with high variance.
+
+Addressing overfitting
+1. Collecting more training example
+2. Select features include/exclude (feature selection)
+3. Reduce the size of parameters i.e "Regularization".
+4. overfitting
 
 
 
