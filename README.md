@@ -278,6 +278,53 @@ Addressing overfitting
 3. Reduce the size of parameters i.e "Regularization".
 4. overfitting
 
+# Day 11
+## Neural Networks
+Neural network is an computer algorithms that try to mimic the brain.neural network is made of a input layer that take input data and hidden layer does all the computation and output layer displays the output.
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/8fcac782-b839-43bc-a877-52840c7fbeb8)
+
+
+### why use neural networks compared to traditional ML algos?
+Choosing between neural networks and traditional machine learning algorithms depends on the specific problem you're trying to solve and the data you have available. Here's a breakdown of their strengths and weaknesses to help you decide:
+
+Traditional ML Algorithms:
+
+Strengths:
+
+Interpretability: They often have clear rules and decision boundaries, making it easier to understand how they make predictions.
+Efficiency: They can be computationally efficient, especially for smaller datasets.
+Stability: They tend to be less prone to overfitting and can perform well even with limited data.
+Weaknesses:
+
+Limited complexity: They may struggle with complex, non-linear relationships in data.
+Feature engineering: Often require manual feature engineering, which can be time-consuming and domain-specific.
+Neural Networks:
+
+Strengths:
+
+High accuracy: They can achieve high accuracy on complex tasks like image recognition, natural language processing, and time series forecasting.
+Automatic feature learning: They can automatically learn features from data, eliminating the need for manual feature engineering.
+Flexibility: They can handle a wide range of data types and tasks.
+Weaknesses:
+
+Interpretability: It can be difficult to understand how they make predictions, making debugging and explaining outputs challenging.
+Computational cost: They can be computationally expensive to train, especially for large datasets and complex architectures.
+Data requirements: They typically require more data than traditional ML algorithms to achieve good performance.
+Here are some specific situations where you might choose one over the other:
+
+Use traditional ML algorithms:
+When interpretability is crucial (e.g., in healthcare or finance).
+When dealing with small datasets or limited computational resources.
+When the problem is relatively simple and well-defined.
+Use neural networks:
+When dealing with complex data and tasks where high accuracy is needed.
+When data is abundant and computational resources are available.
+When feature engineering is difficult or impractical.
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/c788f4fe-91fd-491c-8ebd-592e1d99633d)
+
+
+
+
 
 
 
