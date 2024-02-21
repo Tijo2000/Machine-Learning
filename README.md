@@ -288,25 +288,23 @@ Neural network is an computer algorithms that try to mimic the brain.neural netw
 Choosing between neural networks and traditional machine learning algorithms depends on the specific problem you're trying to solve and the data you have available. Here's a breakdown of their strengths and weaknesses to help you decide:
 
 Traditional ML Algorithms:
-
-Strengths:
-
+Strengths:</br>
 Interpretability: They often have clear rules and decision boundaries, making it easier to understand how they make predictions.
 Efficiency: They can be computationally efficient, especially for smaller datasets.
 Stability: They tend to be less prone to overfitting and can perform well even with limited data.
-Weaknesses:
 
+Weaknesses:</br>
 Limited complexity: They may struggle with complex, non-linear relationships in data.
 Feature engineering: Often require manual feature engineering, which can be time-consuming and domain-specific.
 Neural Networks:
 
-Strengths:
 
+Strengths:</br>
 High accuracy: They can achieve high accuracy on complex tasks like image recognition, natural language processing, and time series forecasting.
 Automatic feature learning: They can automatically learn features from data, eliminating the need for manual feature engineering.
 Flexibility: They can handle a wide range of data types and tasks.
-Weaknesses:
 
+Weaknesses:</br>
 Interpretability: It can be difficult to understand how they make predictions, making debugging and explaining outputs challenging.
 Computational cost: They can be computationally expensive to train, especially for large datasets and complex architectures.
 Data requirements: They typically require more data than traditional ML algorithms to achieve good performance.
@@ -321,6 +319,23 @@ When dealing with complex data and tasks where high accuracy is needed.
 When data is abundant and computational resources are available.
 When feature engineering is difficult or impractical.
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/c788f4fe-91fd-491c-8ebd-592e1d99633d)
+
+# Day 12
+## Forward Propogation In Neural Networks
+Forward propagation in neural networks refers to the process of computing the activation of each neuron in the network layer-by-layer, starting from the input layer and culminating in the output layer.
+
+Key Characteristics:
+
+Feedforward nature: Information flows only in one direction (from input to output).
+Parameter dependence: The output depends on the network's weights and biases, which are learned through training algorithms.
+Non-linearity: Activation functions introduce non-linearity, allowing the network to learn complex relationships in the data.
+
+Forward propagation is a crucial step in neural network training. It paves the way for backpropagation, where the error between the predicted and desired output is propagated back through the network, enabling updates to weights and biases for improved performance.
+
+# Day 13
+## Tensorflow Implementation for Neural Networks
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/0b677ea8-a9b9-4faf-91f9-d0c5632f2040)
+
 
 
 
