@@ -336,6 +336,94 @@ Forward propagation is a crucial step in neural network training. It paves the w
 ## Tensorflow Implementation for Neural Networks
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/0b677ea8-a9b9-4faf-91f9-d0c5632f2040)
 
+### Does Logistic Regression have an Activation Function?
+
+Yes, logistic regression does have an activation function, although it's sometimes not explicitly mentioned. The activation function used in logistic regression is the sigmoid function, also known as the logistic function.
+
+Here's why:
+
+Logistic regression predicts the probability of an event occurring, with outputs ranging from 0 (never happens) to 1 (always happens).
+To achieve this probabilistic output, the linear combination of weighted inputs from the model needs to be transformed into a value between 0 and 1.
+The sigmoid function, with its S-shaped curve, maps any numerical input between negative and positive infinity to a value between 0 and 1.
+Therefore, although the term "activation function" might not be explicitly used in logistic regression, the sigmoid function plays a crucial role in converting the model's linear output into a probability, fulfilling the essential function of an activation function.
+
+Key properties of sigmoid function in logistic regression:
+
+Ensures outputs are limited between 0 and 1, representing probabilities.
+Introduces non-linearity into the model, allowing it to learn complex relationships between features and the target variable.
+Makes the model differentiable, enabling optimization through gradient descent algorithms.
+While the sigmoid function is the traditional choice for logistic regression, other activation functions like the softplus or tanh can also be used in certain applications.
+
+# Day 14
+## Tensorflow Training Workflow
+<img width="527" alt="image" src="https://github.com/Tijo2000/Machine-Learning/assets/56153083/f69974a5-f99d-4432-a102-6e84f97d9d17">
+
+# Day 15
+## Activation Functions
+Imagine you're throwing a party and need to decide who gets invited. You have a list of guests with different qualities like being fun, energetic, or famous.
+
+Without an activation function:
+
+You simply add up the points for each quality and invite anyone who reaches a certain score. This is like using a linear activation function. It only considers the sum of the qualities, which isn't very flexible.
+With an activation function:
+
+You have a "gatekeeper" who considers the sum of qualities but also adds their own judgment. Maybe they prefer funny people even if they aren't famous, or they appreciate energetic people more if the party is small. This "gatekeeper" is like an activation function.
+What activation functions do:
+
+They take the information from previous layers (the guest qualities) and transform it based on certain rules (the gatekeeper's judgment).
+These rules can be simple (like a threshold: invite only the top 10%) or more complex (like considering combinations of qualities).
+Different activation functions have different "personalities" and are suited for different tasks.
+Why are they important?
+
+They add non-linearity to the network, allowing it to learn complex relationships between data points.
+They act like filters, controlling what information gets passed on to the next layer.
+Choosing the right activation function can significantly improve the performance of your neural network.
+Thinking of it another way:
+
+Imagine a light switch. A linear activation function would be like a simple on/off switch, while a non-linear function could be like a dimmer switch, allowing for different levels of brightness.
+Remember:
+
+Activation functions are like decision-makers within the network, adding flexibility and power to learning.
+Experimenting with different types can help you find the best fit for your specific problem.
+
+<img width="530" alt="image" src="https://github.com/Tijo2000/Machine-Learning/assets/56153083/783ba567-7f29-4de7-bb67-7d4d5984a092">
+
+## Choosing the right activation function
+Choosing the right activation function for your output layer depends on the type of problem you're trying to solve: classification or regression. Here's a breakdown:
+
+Classification:
+
+Goal: Predict discrete categories (e.g., image is a cat or dog, email is spam or not spam).
+Output format: Probabilities of belonging to each class.
+Suitable activation functions:
+Softmax: Outputs a probability distribution over all possible classes, summing to 1. Ideal for multi-class problems (more than two).
+Sigmoid: Outputs a probability between 0 and 1, suitable for binary classification (two classes).
+Regression:
+
+Goal: Predict continuous values (e.g., house price, temperature).
+Output format: Direct numerical value representing the predicted value.
+Suitable activation functions:
+Linear: No transformation, outputs the weighted sum of inputs directly. Simple and interpretable, but might not capture complex relationships.
+ReLU (Rectified Linear Unit): Outputs the input if it's positive, otherwise outputs 0. Fast and efficient, good for many regression tasks.
+TanH: Similar to ReLU but outputs values between -1 and 1, can be useful in certain cases.
+Additional factors to consider:
+
+Complexity of the problem: More complex problems might benefit from non-linear activation functions like ReLU or tanh, even in regression tasks.
+Computational efficiency: Linear and ReLU are generally faster than sigmoid or softmax.
+Interpretability: Linear outputs are the easiest to interpret, while non-linear functions might be a "black box."
+<img width="529" alt="image" src="https://github.com/Tijo2000/Machine-Learning/assets/56153083/a4e50d6d-1878-4e72-8dea-6a9c8dd5fd57">
+<img width="375" alt="image" src="https://github.com/Tijo2000/Machine-Learning/assets/56153083/3c1a975b-0fbc-4760-853a-9347d4c77ac5">
+<img width="515" alt="image" src="https://github.com/Tijo2000/Machine-Learning/assets/56153083/a948f253-f4f6-4e60-a546-ac1cecb947a5">
+
+# Day 15
+## why do we need Activation Functions
+
+
+
+
+
+
+
 
 
 
