@@ -417,6 +417,16 @@ Interpretability: Linear outputs are the easiest to interpret, while non-linear 
 
 # Day 15
 ## why do we need Activation Functions
+There are different activation function for different purpose some of the most commonly used are :
+* Linear acitvation function(activation='linear')
+This is used for regression problem where result is negative/positive.
+* ReLU (activation = 'ReLU')
+This is used for regression problem where result should be positive always and it is faster as compared to sigmoid function.
+* Sigmoid function(activation='sigmoid')
+It is used for classification problems where result must be on/off and it is slowere as compared to ReLU.
+NOTE:For hidden layer we choose ReLU as activation and for output layer we choose activation according to our problems,because if we choose sigmoid in hidden layer than neural network becomes very slow so it better to choose Relu in hidden layer.
+![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/713b73eb-ff6e-4b75-ae36-408457339a0e)
+
 
 
 
