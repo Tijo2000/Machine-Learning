@@ -430,12 +430,15 @@ NOTE:For hidden layer we choose ReLU as activation and for output layer we choos
 
 # Day 16
 ## Bias and Variance
+
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/b48484fd-a076-4b6a-9d1b-fe3afb7d6cf4)
 
 # Day 17
 ## Ethics of Machine Learning
+
 *Precision - It tell of all positive prediction how many are actually positve.
 *Recall - It tell of all real positive cases how many are actually predicted positive.
+
 ![image](https://github.com/Tijo2000/Machine-Learning/assets/56153083/e3362ae0-f6a8-4584-8397-327cfff47855)
 
 
